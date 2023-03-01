@@ -16,5 +16,12 @@ namespace Week01
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int sum = Convert.ToInt32(textBox1.Text) + Convert.ToInt32(textBox2.Text);
+            label3.Text = sum.ToString();
+            label3.ForeColor = Color.Red;
+        }
     }
 }
