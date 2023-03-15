@@ -41,7 +41,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(74, 35);
+            this.label1.Location = new System.Drawing.Point(78, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 18);
             this.label1.TabIndex = 0;
@@ -52,20 +52,20 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(77, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 27);
+            this.label2.Size = new System.Drawing.Size(58, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Weight";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(196, 35);
+            this.textBox1.Location = new System.Drawing.Point(196, 27);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 29);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(196, 106);
+            this.textBox2.Location = new System.Drawing.Point(196, 115);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 29);
             this.textBox2.TabIndex = 3;
@@ -73,24 +73,24 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(354, 56);
+            this.label3.Location = new System.Drawing.Point(344, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 27);
+            this.label3.Size = new System.Drawing.Size(29, 18);
             this.label3.TabIndex = 4;
             this.label3.Text = "cm";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(357, 118);
+            this.label4.Location = new System.Drawing.Point(344, 118);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 27);
+            this.label4.Size = new System.Drawing.Size(24, 18);
             this.label4.TabIndex = 5;
             this.label4.Text = "kg";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(318, 190);
+            this.button1.Location = new System.Drawing.Point(347, 203);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -103,7 +103,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(78, 205);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 27);
+            this.label5.Size = new System.Drawing.Size(58, 18);
             this.label5.TabIndex = 7;
             this.label5.Text = "BMI: 0";
             // 

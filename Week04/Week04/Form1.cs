@@ -22,7 +22,26 @@ namespace Week04
             int height = Convert.ToInt32(textBox1.Text);
             int weight = Convert.ToInt32(textBox2.Text);
             double bmi = weight / Math.Pow((double)height / 100, 2);
-            label5.Text = "BMI: " + bmi.ToString("0.00");
+
+            string bmi_message = "";
+
+            if (bmi < 18)
+            {
+                bmi_message = "(light)";
+            }
+            else if (bmi < 24)
+            {
+                bmi_message = "(normal)";
+            }
+            else if (bmi < 27)
+            {
+                bmi_message = "(kind of heavy)";
+            }
+            else {
+                bmi_message = "(too heavy)";
+            }
+
+            label5.Text = "BMI: " + bmi.ToString("0.00") + " " + bmi_message;
         }
     }
 }
