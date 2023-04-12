@@ -30,5 +30,37 @@ namespace Week08_02
                 textBox1.Text = "Unknown";
             }
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            showFood();
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            showFood();
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            showFood();
+        }
+
+        private void showFood()
+        {
+            textBox2.Text = "";
+            if (checkBox1.Checked)
+            {
+                textBox2.Text += (checkBox1.Text + "\r\n");
+            }
+            if (checkBox2.Checked)
+            {
+                textBox2.Text += checkBox2.Text + "\r\n";
+            }
+            if (checkBox3.Checked)
+            {
+                textBox2.Text += checkBox3.Text + "\r\n";
+            }
+        }
     }
 }

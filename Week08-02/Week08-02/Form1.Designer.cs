@@ -33,6 +33,11 @@
             textBox1 = new TextBox();
             radioButton2 = new RadioButton();
             radioButton3 = new RadioButton();
+            label2 = new Label();
+            checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
+            checkBox3 = new CheckBox();
+            textBox2 = new TextBox();
             SuspendLayout();
             // 
             // radioButton1
@@ -87,11 +92,66 @@
             radioButton3.UseVisualStyleBackColor = true;
             radioButton3.CheckedChanged += radioButton3_CheckedChanged;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(294, 41);
+            label2.Name = "label2";
+            label2.Size = new Size(34, 15);
+            label2.TabIndex = 5;
+            label2.Text = "Food";
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(294, 96);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(87, 19);
+            checkBox1.TabIndex = 6;
+            checkBox1.Text = "Hamburger";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(294, 155);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(89, 19);
+            checkBox2.TabIndex = 7;
+            checkBox2.Text = "French Fries";
+            checkBox2.UseVisualStyleBackColor = true;
+            checkBox2.CheckedChanged += checkBox2_CheckedChanged;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.Location = new Point(294, 214);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(98, 19);
+            checkBox3.TabIndex = 8;
+            checkBox3.Text = "Fried Chicken";
+            checkBox3.UseVisualStyleBackColor = true;
+            checkBox3.CheckedChanged += checkBox3_CheckedChanged;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(294, 273);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(158, 111);
+            textBox2.TabIndex = 9;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox2);
+            Controls.Add(checkBox3);
+            Controls.Add(checkBox2);
+            Controls.Add(checkBox1);
+            Controls.Add(label2);
             Controls.Add(radioButton3);
             Controls.Add(radioButton2);
             Controls.Add(textBox1);
@@ -110,5 +170,10 @@
         private TextBox textBox1;
         private RadioButton radioButton2;
         private RadioButton radioButton3;
+        private Label label2;
+        private CheckBox checkBox1;
+        private CheckBox checkBox2;
+        private CheckBox checkBox3;
+        private TextBox textBox2;
     }
 }
