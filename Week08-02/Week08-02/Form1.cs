@@ -12,6 +12,7 @@ namespace Week08_02
             if (radioButton1.Checked)
             {
                 textBox1.Text = radioButton1.Text;
+                Console.WriteLine(radioButton1 + ": " + textBox1.Text);
             }
         }
 
