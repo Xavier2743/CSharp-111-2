@@ -6,5 +6,10 @@ namespace Week09_01
         {
             InitializeComponent();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            label1.Text = comboBox1.SelectedItem.ToString();
+        }
     }
 }
