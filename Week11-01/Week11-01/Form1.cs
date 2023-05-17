@@ -2,9 +2,8 @@ namespace Week11_01
 {
     public partial class Form1 : Form
     {
-        int num1;
-        int num2;
-        int num3;
+        int[] numbers = new int[9];
+
         public Form1()
         {
             InitializeComponent();
@@ -13,9 +12,12 @@ namespace Week11_01
         private void button1_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            num1 = rnd.Next(1, 8);
-            num2 = rnd.Next(1, 8);
-            num3 = rnd.Next(1, 8);
+
+            foreach (int i in numbers)
+            {
+                i = rnd.Next(1, 8);
+            }
+
 
             pictureBox_Show(pictureBox1, num1);
             pictureBox_Show(pictureBox2, num2);
@@ -67,6 +69,11 @@ namespace Week11_01
                 default:
                     break;
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
