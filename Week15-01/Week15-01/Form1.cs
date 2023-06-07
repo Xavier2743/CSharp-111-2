@@ -42,36 +42,39 @@ namespace Week15_01
             con.Close();
         }
 
+        private void queryMeal(int mealID)
+        {
+            con.Open();
+            DataTable dt = new DataTable();
+            adapter = new SqlDataAdapter("SELECT * FROM Meal WHERE mealID = '" + mealID + "'", con);
+            adapter.Fill(dt);
+            String name = dt.Rows[0].Field<String>(1);
+            int price = dt.Rows[0].Field<int>(2);
+            con.Close();
+            textBox1.Text = name;
+            textBox2.Text = price + "";
+            numericUpDown1.Value = 1;
+            textBox3.Text = price + "";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "Burger";
-            textBox2.Text = "60";
-            numericUpDown1.Value = 1;
-            textBox3.Text = "60";
+            queryMeal(1);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "Coke";
-            textBox2.Text = "30";
-            numericUpDown1.Value = 1;
-            textBox3.Text = "30";
+            queryMeal(2);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "Rice";
-            textBox2.Text = "20";
-            numericUpDown1.Value = 1;
-            textBox3.Text = "20";
+            queryMeal(3);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "Noddle";
-            textBox2.Text = "50";
-            numericUpDown1.Value = 1;
-            textBox3.Text = "50";
+            queryMeal(4);
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
