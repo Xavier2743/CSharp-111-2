@@ -6,6 +6,10 @@ t1.Start("X");
 t2.Start("Y");
 t3.Start("Z");
 
+t1.Join();
+t2.Join();
+t3.Join();
+
 for (int i = 0; i < 100; i++)
 {
     Console.Write(".");
