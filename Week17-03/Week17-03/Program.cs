@@ -1,14 +1,20 @@
 ﻿Thread t1 = new Thread(MyBackgroundTask);
-t1.Start();
+Thread t2 = new Thread(MyBackgroundTask);
+Thread t3 = new Thread(MyBackgroundTask);
+
+t1.Start("X");
+t2.Start("Y");
+t3.Start("Z");
+
 for (int i = 0; i < 100; i++)
 {
-    Console.Write("A");
+    Console.Write(".");
 }
 
-static void MyBackgroundTask()
+static void MyBackgroundTask(object str)
 {
     for (int i = 0; i < 100; i++)
     {
-        Console.Write("B");
+        Console.Write(str);
     }
 }
