@@ -1,7 +1,15 @@
-﻿mySleep();
-Console.WriteLine("Hi");
+﻿using System.Net;
 
-static void mySleep()
+Task<string> task = MyDownloadPageAsync("https://www.google.com");
+Console.WriteLine("Hi1");
+
+string page = task.Result;
+Console.WriteLine("Hi2");
+
+static async Task<string> MyDownloadPageAsync(string url)
 {
-    Thread.Sleep(5000);
+    var webClient = new WebClient();
+    var task = webClient.DownloadStringTaskAsync(url);
+    string content = await task;
+    return content;
 }
